@@ -1,0 +1,26 @@
+{
+  "name": "search-playground",
+  "version": "1.0.0",
+  "scripts": {
+    "index": "node scripts/command.js index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryo-chin/search-playground.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryo-chin/search-playground/issues"
+  },
+  "homepage": "https://github.com/ryo-chin/search-playground#readme",
+  "dependencies": {
+    "yargs": "^17.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@elastic/elasticsearch": "7.10.0",
+    "eslint": "^8.21.0",
+    "prettier": "2.4.1"
+  }
+}
