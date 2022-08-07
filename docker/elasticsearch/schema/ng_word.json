@@ -1,0 +1,37 @@
+{
+  "settings": {
+    "index": {
+      "search" : {
+        "slowlog" : {
+          "level" : "warn",
+          "threshold" : {
+            "query" : {
+              "warn" : "1s"
+            }
+          }
+        }
+      },
+      "number_of_shards": "6"
+    },
+    "analysis": {
+      "tokenizer": {
+      },
+      "analyzer": {
+      },
+      "char_filter": {
+      }
+    }
+  },
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "word": {
+          "type": "text"
+        },
+        "word_type": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}
