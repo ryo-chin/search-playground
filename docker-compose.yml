@@ -12,11 +12,15 @@ services:
       ENV_SERVER_LOCAL_IP: 127.0.0.1
     ports:
       - '9200:9200'
-      - '9300:9300'
   kibana:
     container_name: kibana
     build: docker/kibana
     image: search-playground-kibana
     ports:
       - '5601:5601'
-
+  cerebro:
+    container_name: cerebro
+    build: docker/cerebro
+    image: search-playground-cerebro
+    ports:
+      - '9000:9000'
