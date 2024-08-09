@@ -1,3 +1,14 @@
 .idea
 node_modules
 package-lock.json
+
+todo.
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
