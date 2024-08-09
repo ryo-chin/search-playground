@@ -3,9 +3,9 @@ services:
   elasticsearch:
     container_name: elasticsearch
     build: docker/elasticsearch
-    image: docker.elastic.co/elasticsearch/elasticsearch
+    image: search-playground-elasticsearch
     environment:
-      - ES_JAVA_OPTS="-Xms256m -Xmx1024m"
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m 
       - discovery.type=single-node
       - xpack.security.enabled=false  # セキュリティ機能を無効化
     ports:
