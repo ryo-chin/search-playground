@@ -1,4 +1,4 @@
-version: '2.4'
+version: '3'
 services:
   elasticsearch:
     container_name: elasticsearch
@@ -14,5 +14,7 @@ services:
     container_name: kibana
     build: docker/kibana
     image: search-playground-kibana
+    environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
     ports:
       - '5601:5601'
